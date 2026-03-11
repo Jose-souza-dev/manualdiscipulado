@@ -169,6 +169,7 @@
     }
 
     .verso {
+        width: 98%;
         font-style: italic;
         text-align: end;
         margin-top: 10px;
