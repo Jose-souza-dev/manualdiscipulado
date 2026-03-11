@@ -162,6 +162,12 @@
         border-bottom: 2px solid #5b5b5b;
     }
 
+    .versiculo{
+        width: 100%;
+        padding: 10px;
+        /* background: olive; */
+    }
+
     .verso {
         font-style: italic;
         text-align: end;
