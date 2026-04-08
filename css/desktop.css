@@ -1,0 +1,331 @@
+/* CONFIGURAÇÃO PARA DESKTOP (Acima de 1024px) */
+@media (min-width: 1024px) {
+
+    @font-face {
+        font-family: 'Teko';
+        src: url('../fonts/Teko-SemiBold.ttf')
+    }
+
+    @font-face {
+        font-family: 'BookAntiqua';
+        src: url('../fonts/Book\ Antiqua.ttf')
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .margin-10px {
+        margin: -5px 0;
+    }
+
+    .margin-left-10px {
+        margin-left: 10px;
+    }
+
+    body {
+        /* background-color: #fff3da; */
+        width: 100%;
+    }
+
+    /* Ajuste do container principal */
+    main {
+        width: 100%;
+        min-height: 100vh;
+        /* Use min-height para permitir que o conteúdo cresça */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* background-color: #fff3da; */
+    }
+
+    /* Hero Section - Ajustada para não ser esmagada */
+    section#hero {
+        width: 100%;
+        min-height: 630px;
+        /* min-height é mais seguro que height fixo */
+        background: #ccc url(../img/dicipulador.jpg) no-repeat center;
+        background-size: cover;
+        /* 'cover' preenche melhor do que '100%' */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+        /* Garante que o grid não "empurre" o hero para cima */
+    }
+
+    /* Área de Lições - O GRID */
+    section.licoes {
+        width: 100%;
+        min-height: 200px;
+        /* Mudado de height para min-height */
+        background-color: #ffffff;
+        padding: 40px 0;
+        /* Espaçamento interno mais generoso */
+        margin-top: 0;
+        /* Removido margin se quiser colado no hero, ou ajuste conforme preferência */
+        display: block;
+    }
+
+    section.licoes ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px 40px;
+        list-style: none;
+        width: 90%;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    section.licoes ul li a {
+        text-decoration: none;
+        color: #555555;
+    }
+
+    section.licoes ul li a:hover {
+        color: #0d3e86;
+    }
+
+    /* Ajuste do Footer para não sobrepor */
+    footer {
+        width: 100%;
+        height: 50px;
+        background: #353a48;
+        padding: 80px 0 20px 0;
+        /* Reduzi os 300px que podem estar empurrando o grid */
+        clear: both;
+    }
+
+    footer ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    footer ul li a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 18px;
+    }
+
+    footer ul li a:hover {
+        text-decoration: underline;
+    }
+
+    /* --- Classes de Utilidade Mantidas --- */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'Teko', sans-serif;
+        margin: 10px;
+        color: #555;
+    }
+
+    .bigFont {
+        font-size: 70px;
+    }
+
+    .mediumFont {
+        font-size: 30px;
+    }
+
+    .litlleFont {
+        font-size: 19px;
+    }
+
+    div.aviso {
+        width: 90%;
+        margin: 30px auto;
+        border-left: 2px #ccc solid;
+        border-radius: 6px;
+        padding: 10px;
+    }
+
+    div.aviso p {
+        font-size: 14px;
+        margin-left: 20px;
+    }
+
+
+    /* ÁREA DE LIÇÕES*/
+
+    main#tela-main {
+        width: 60%;
+        margin: auto;
+    }
+
+    .hero-licao {
+        width: 100%;
+        /* background: orange; */
+        display: flex;
+        flex-direction: column;
+        border-bottom: 2px solid #5b5b5b;
+    }
+
+    .versiculo {
+        width: 100%;
+        padding: 10px;
+        /* background: olive; */
+    }
+
+    .verso {
+        width: 98%;
+        font-style: italic;
+        text-align: end;
+        margin-top: 10px;
+        margin-right: 5px;
+        color: #5b5b5b;
+    }
+
+    .number-licao {
+        font-family: 'Teko';
+        text-align: end;
+        font-weight: normal;
+        margin-top: 15px;
+        margin-right: 10px;
+        color: #5b5b5b;
+    }
+
+    .title-licao {
+        font-family: 'Teko';
+        text-align: end;
+        font-weight: normal;
+        margin-top: -5px;
+        margin-right: 10px;
+        color: #5b5b5b;
+    }
+
+    .page {
+        width: 100%;
+        /* background-color: #ccc; */
+        padding: 10px;
+        margin-top: 60px;
+    }
+
+    .sub-title {
+        text-align: left;
+        margin-left: 10px;
+        color: #5b5b5b;
+    }
+
+    .point {
+        text-align: left;
+        margin-left: 10px;
+        color: #5b5b5b;
+    }
+
+    .paragrafy {
+        width: 95%;
+        margin: 10px auto;
+        text-align: justify;
+        font-family: 'BookAntiqua';
+        font-size: 18px;
+        color: #5b5b5b;
+        text-indent: 30px;
+    }
+
+    .paragrafy-sobre {
+        width: 95%;
+        margin: 10px auto;
+        text-align: center;
+        font-family: 'BookAntiqua';
+        font-size: 15px;
+        color: #5b5b5b;
+    }
+
+    .hssobre {
+        text-align: center;
+    }
+
+    .bolder {
+        font-weight: bolder;
+    }
+
+    .pitalic {
+        font-style: italic;
+    }
+
+    .alinhadireita {
+        text-align: right;
+        color: #5b5b5b;
+        font-size: 15px;
+    }
+
+    #cronologia {
+        width: 100%;
+    }
+
+    /* ------------------------------------------- */
+
+    .impress {
+        width: 30%;
+        color: #5b5b5b;
+        margin: 100px auto;
+        text-align: justify;
+        font-family: 'BookAntiqua';
+        font-size: 15px;
+        color: #5b5b5b;
+        /* text-indent: 30px; */
+    }
+
+    .paragrafy {
+        width: 95%;
+        margin: 10px auto;
+        text-align: justify;
+        font-family: 'BookAntiqua';
+        font-size: 15px;
+        color: #5b5b5b;
+        text-indent: 30px;
+    }
+
+    .paragrafy-sobre {
+        width: 95%;
+        margin: 10px auto;
+        text-align: center;
+        font-family: 'BookAntiqua';
+        font-size: 18px;
+        color: #5b5b5b;
+    }
+
+    .hssobre {
+        text-align: center;
+    }
+
+    /* footer das lições */
+
+    .rodape {
+        width: 100%;
+        height: 50px;
+        /* background: #fff3da; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        bottom: 0%;
+    }
+
+    .rodape a {
+        color: #fff;
+        padding: 10px 10px;
+        background-color: #003d68;
+        border-radius: 30px;
+        font-weight: bolder;
+        text-decoration: none;
+    }
+
+    /* ------------------------------------- */
+
+
+
+
+
+}
+
+/* fim da media */
