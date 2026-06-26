@@ -136,7 +136,7 @@
         font-size: 30px;
     }
 
-    .litlleFont {
+    .littleFont {
         font-size: 19px;
     }
 
@@ -209,7 +209,7 @@
         margin-top: 60px;
     }
 
-    .sub-title {
+    .sub-title, .subtitle {
         text-align: left;
         margin-left: 10px;
         color: #5b5b5b;
